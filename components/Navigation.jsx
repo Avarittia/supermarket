@@ -1,8 +1,14 @@
 import Link from "next/link";
 import { FaPhoneAlt, FaSearch } from "react-icons/fa";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { Button, Col, Container, Form, Row } from "react-bootstrap";
+import { useState } from "react";
 
 const Navigation = () => {
+  const [navCollapse, setNavCollapse] = useState(false);
+  const collapse = () => {
+    setNavCollapse(!navCollapse);
+  };
   return (
     <Container fluid className="px-0">
       <Container
@@ -131,29 +137,46 @@ const Navigation = () => {
       </Container>
       <Container fluid className="px-0 py-3">
         <nav className="">
-            <ul className="nav-items mt-3">
-                <li>
-                    <Link href="/">Home</Link>
-                </li>
-                <li>
-                    <Link href="/">All Products</Link>
-                </li>
-                <li>
-                    <Link href="/">Groceries</Link>
-                </li>
-                <li>
-                    <Link href="/">Packaged Food</Link>
-                </li>
-                <li>
-                    <Link href="/">Daily Necessity</Link>
-                </li>
-                <li>
-                    <Link href="/">Offers</Link>
-                </li>
-                <li>
-                    <Link href="/">Contact</Link>
-                </li>
-            </ul>
+          <div className="navbar-collapse px-4">
+            <Button
+              style={{
+                borderRadius: "0",
+                borderColor: "white",
+                border: "2px solid white",
+              }}
+              className="bg-transparent"
+              onClick={collapse}
+            >
+              {navCollapse ? (
+                <AiOutlineMenu size={25} />
+              ) : (
+                <AiOutlineClose size={25} />
+              )}
+            </Button>
+          </div>
+          <ul className={navCollapse ? "hidden-nav m-0" : "nav-items m-0 py-2"}>
+            <li>
+              <Link href="/">Home</Link>
+            </li>
+            <li>
+              <Link href="/">All Products</Link>
+            </li>
+            <li>
+              <Link href="/">Groceries</Link>
+            </li>
+            <li>
+              <Link href="/">Packaged Food</Link>
+            </li>
+            <li>
+              <Link href="/">Daily Necessity</Link>
+            </li>
+            <li>
+              <Link href="/">Offers</Link>
+            </li>
+            <li>
+              <Link href="/">Contact</Link>
+            </li>
+          </ul>
         </nav>
       </Container>
     </Container>
