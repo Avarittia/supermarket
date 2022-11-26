@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Navigation from "../components/Navigation";
-import "bootstrap/dist/css/bootstrap.min.css";
+
 
 export default function Home() {
   return (

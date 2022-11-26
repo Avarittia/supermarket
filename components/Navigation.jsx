@@ -159,7 +159,7 @@ const Navigation = () => {
               <Link href="/">Home</Link>
             </li>
             <li>
-              <Link href="/">All Products</Link>
+              <Link href="/Products">All Products</Link>
             </li>
             <li>
               <Link href="/">Groceries</Link>
