@@ -135,7 +135,7 @@ const Navigation = () => {
           </Col>
         </Row>
       </Container>
-      <Container fluid className="px-0 py-3">
+      <Container fluid className="px-0 pt-3">
         <nav className="">
           <div className="navbar-collapse px-4">
             <Button
