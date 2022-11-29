@@ -2,9 +2,11 @@ import Link from "next/link";
 import { FaPhoneAlt, FaSearch } from "react-icons/fa";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { Button, Col, Container, Form, Row } from "react-bootstrap";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import StoreContext from "../context/StoreContext";
 
 const Navigation = () => {
+
   const [navCollapse, setNavCollapse] = useState(false);
   const collapse = () => {
     setNavCollapse(!navCollapse);
@@ -159,7 +161,7 @@ const Navigation = () => {
               <Link href="/">Home</Link>
             </li>
             <li>
-              <Link href="/Products">All Products</Link>
+              <Link href="/product">All Products</Link>
             </li>
             <li>
               <Link href="/">Groceries</Link>
