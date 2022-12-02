@@ -144,7 +144,7 @@ button#fill-tab-example-tab-home {
 @media (max-width: 768px) {
   nav {
     background-color: #fe9126;
-    position: relative;
+
     .navbar-collapse {
       display: block;
     }
@@ -159,6 +159,7 @@ button#fill-tab-example-tab-home {
       padding: 0;
       gap: 1rem;
       background-color: #fe9126;
+      width: inherit;
     }
     .nav-items {
       display: flex;
@@ -180,11 +181,13 @@ button#fill-tab-example-tab-home {
         a {
           text-decoration: none;
           color: white;
+          padding-left: 3.5rem;
         }
       }
     }
   }
 }
+
 
 @media (prefers-color-scheme: dark) {
   html {

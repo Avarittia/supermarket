@@ -7,6 +7,7 @@ const Datamapping = ({ products, loading }) => {
   if (loading) {
     return <Loader />;
   }
+
   return (
     <Row>
       {products.map((items) => {
@@ -16,7 +17,7 @@ const Datamapping = ({ products, loading }) => {
               style={{ height: "350px", gap: "2rem", borderRadius: "0" }}
               className="d-flex flex-column justify-content-center align-items-center py-3 card"
             >
-              <Link href={`${items.id}`}>
+              <Link href={"/product/" + items.id}>
                 {" "}
                 <Card.Img
                   variant="top"
@@ -58,7 +59,6 @@ const Datamapping = ({ products, loading }) => {
           </Col>
         );
       })}
-      {/* <ToastContainer /> */}
     </Row>
   );
 };

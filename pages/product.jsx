@@ -11,6 +11,7 @@ const product = () => {
   const { products, loading } = useContext(StoreContext);
 
 
+
   const [currentPage, setCurrentPage] = useState(1);
   const [productPerPage, setProductPerPage] = useState(9);
 

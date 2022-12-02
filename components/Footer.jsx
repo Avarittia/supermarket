@@ -13,7 +13,7 @@ const Footer = () => {
     >
       <Container>
         <Row className="py-5">
-          <Col sm={12} md={6} lg={3} className="g-2">
+          <Col xs={12}  sm={12} md={6} lg={3} className="g-2">
             <h3 className="text-start">Contact</h3>
             <div style={{ color: "#fa9126" }}>
               <ul
@@ -66,7 +66,7 @@ const Footer = () => {
               </ul>
             </div>
           </Col>
-          <Col sm={12} md={6} lg={3} className="g-2">
+          <Col  xs={12} sm={12} md={6} lg={3} className="g-2">
             <h3 className="text-start">Information</h3>
             <div style={{ color: "#fa9126" }}>
               <ul
@@ -157,7 +157,7 @@ const Footer = () => {
               </ul>
             </div>
           </Col>
-          <Col sm={12} md={6} lg={3} className="g-2">
+          <Col  xs={12} sm={12} md={6} lg={3} className="g-2">
             <h3 className="text-start">Category</h3>
             <div style={{ color: "#fa9126" }}>
               <ul
@@ -247,7 +247,7 @@ const Footer = () => {
               </ul>
             </div>
           </Col>
-          <Col sm={12} md={6} lg={3} className="g-2">
+          <Col  xs={12} sm={12} md={6} lg={3} className="g-2">
             <h3 className="text-start">Profile</h3>
             <div style={{ color: "#fa9126" }}>
               <ul

@@ -6,7 +6,6 @@ import { useContext, useState } from "react";
 import StoreContext from "../context/StoreContext";
 
 const Navigation = () => {
-
   const [navCollapse, setNavCollapse] = useState(false);
   const collapse = () => {
     setNavCollapse(!navCollapse);
@@ -19,8 +18,8 @@ const Navigation = () => {
         className="px-0 text-light py-2"
       >
         <Container>
-          <Row className="align-items-center justify-content-evenly text-center g-5">
-            <Col sm={12} md={12} lg={6}>
+          <Row className="align-items-center justify-content-evenly text-center ">
+            <Col sm={12} md={12} lg={6} xs={12}>
               SALE UP TO 70% OFF. USE CODE "SALE70%" .{" "}
               <Link
                 href="#"
@@ -41,7 +40,7 @@ const Navigation = () => {
       </Container>
       <Container fluid>
         <Row className="align-items-center justify-content-evenly text-center g-4 py-4">
-          <Col lg={4} md={6}>
+          <Col lg={4} md={6} xs={12}>
             <h1 style={{ fontWeight: "bold", color: "#fe9126" }}>
               SUPER MARKET
             </h1>
@@ -156,7 +155,9 @@ const Navigation = () => {
               )}
             </Button>
           </div>
-          <ul className={navCollapse ? "hidden-nav m-0" : "nav-items m-0 py-2"}>
+          <ul
+            className={navCollapse ? "hidden-nav m-0 " : "nav-items m-0 py-2  "}
+          >
             <li>
               <Link href="/">Home</Link>
             </li>
@@ -164,16 +165,22 @@ const Navigation = () => {
               <Link href="/product">All Products</Link>
             </li>
             <li>
-              <Link href="/">Groceries</Link>
+              <Link href="/fresh-vegetabless">Groceries</Link>
             </li>
             <li>
-              <Link href="/">Packaged Food</Link>
+              <Link href="/dry-food">Packaged Food</Link>
             </li>
             <li>
-              <Link href="/">Daily Necessity</Link>
+              <Link href="/raw-honey">Honey</Link>
             </li>
             <li>
-              <Link href="/">Offers</Link>
+              <Link href="/frozen-products">Frozen Products</Link>
+            </li>
+            <li>
+              <Link href="/dairy-products">Dairy Products</Link>
+            </li>
+            <li>
+              <Link href="/non-veg-items">Meat</Link>
             </li>
             <li>
               <Link href="/">Contact</Link>
