@@ -327,11 +327,12 @@ const Register = () => {
             <input
               type="password"
               required
-              id="password"
+              id="confirm-password"
               autoComplete="off"
               onChange={(e) => setMatchPwd(e.target.value)}
               onFocus={() => setMatchFocus(true)}
               onBlur={() => setMatchFocus(false)}
+              
             />
             <p
               className={

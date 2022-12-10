@@ -8,7 +8,7 @@ export function StoreProvider({ children }) {
   const URL =
     "https://uat.ordering-farmshop.ekbana.net/api/v4/product?allProduct=1";
   const [products, setProducts] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     const fetchProducts = async () => {

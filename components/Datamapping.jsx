@@ -12,10 +12,10 @@ const Datamapping = ({ products, loading }) => {
     <Row>
       {products.map((items) => {
         return (
-          <Col lg={4} md={6} sm={12} className="g-5 px-4" key={items.id}>
+          <Col lg={4} md={6} sm={12} className="g-5 px-4 mx-0" key={items.id} >
             <Card
               style={{ height: "350px", gap: "2rem", borderRadius: "0" }}
-              className="d-flex flex-column justify-content-center align-items-center py-3 card"
+              className="d-flex flex-column justify-content-center align-items-center py-3"
             >
               <Link href={"/product/" + items.id}>
                 {" "}

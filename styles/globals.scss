@@ -278,6 +278,9 @@ section {
       }
     }
   }
+  .column{
+    width: 300px !important;
+  }
 }
 
 @media (prefers-color-scheme: dark) {

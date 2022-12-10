@@ -41,19 +41,19 @@ const Navigation = () => {
       <Container fluid>
         <Row className="align-items-center justify-content-evenly text-center g-4 py-4">
           <Col lg={4} md={6} xs={12}>
-            <h1 style={{ fontWeight: "bold", color: "#fe9126" }}>
+            <h1 style={{ fontWeight: "bold", color: "#fe9126",  }}>
               SUPER MARKET
             </h1>
           </Col>
           <Col lg={4} md={6} className="r">
             <Form
-              className="d-flex align-items-center justify-content-center"
-              style={{ width: "100%" }}
+              className="d-flex align-items-center justify-content-center pb-0"
+              style={{ width: "100%", flexDirection:"row" }}
             >
               <Form.Control
                 type="text"
                 placeholder="Search Products"
-                style={{ borderRadius: "0" }}
+                style={{ borderRadius: "0", }}
               />
               <Button
                 style={{
@@ -72,7 +72,7 @@ const Navigation = () => {
             md={12}
             className="d-flex align-items-center justify-content-evenly"
           >
-            <Link href="#">
+            <Link href="/register">
               {" "}
               <Button
                 style={{
@@ -85,7 +85,7 @@ const Navigation = () => {
                 SIGN UP
               </Button>
             </Link>
-            <Link href="#">
+            <Link href="/login">
               <Button
                 style={{
                   backgroundColor: "#fe9126",

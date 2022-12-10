@@ -56,17 +56,17 @@ const product = () => {
           </Container>
         </Container>
         <Container>
-          <Row fluid className="px-0 g-5">
+          <Row className="px-0 g-5 mx-0">
             <Col lg={4} md={12} sm={12} className="px-5 g-3">
               <Sidebar />
             </Col>
 
-            <Col lg={8} md={12} sm={12} className="p-3">
+            <Col lg={8} md={12} sm={12} className="p-0">
               <select
                 className="form-select ms-auto"
                 id="floatingSelect"
                 aria-label="Floating label select example"
-                style={{ width: "300px", borderRadius: "0" }}
+                style={{ width: "300px", borderRadius: "0", marginTop:"1.5rem" }}
                 onChange={(e) => {
                   const selectedProducts = e.target.value;
                   setProductPerPage(selectedProducts);
