@@ -2,15 +2,18 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { Container } from "react-bootstrap";
 import { FaHome } from "react-icons/fa";
+import { useSignin } from "../context/useSignin";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleSubmit = async e=>{
-    e.preventDefault()
-    console.log(email, password)
-  }
+  const { signin, error, isLoading } = useSignin();
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    await signin(email, password);
+  };
 
   return (
     <Container fluid className="px-0">
@@ -44,6 +47,7 @@ const Login = () => {
         <section className="mt-5">
           <form onSubmit={handleSubmit} className="">
             <h2 style={{ color: "#fe9126", fontWeight: "500" }}>Sign In</h2>
+            {error && <div className="errmsg">{error}</div>}
             <label htmlFor="email" style={{ fontWeight: "500" }}>
               Email:
             </label>
@@ -77,6 +81,7 @@ const Login = () => {
                 height: "40px",
                 color: "white",
               }}
+              disabled={isLoading}
             >
               Sign In
             </button>
