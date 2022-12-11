@@ -128,7 +128,7 @@ const Register = () => {
       <Container
         fluid
         className="py-4 px-0"
-        style={{ backgroundColor: "#f5f5f5" }}
+        style={{ backgroundColor: "#1f1f1f" }}
       >
         <Container className="">
           <Link
@@ -137,7 +137,7 @@ const Register = () => {
               fontSize: "1rem",
               textDecoration: "none",
               fontWeight: "bold",
-              color: "#3399cc",
+              color: "#efbe8a",
             }}
           >
             <span style={{ fontSize: "1.2rem" }}>
@@ -156,7 +156,7 @@ const Register = () => {
           <p ref={errRef} className={errMsg ? "errmsg" : "offscreen"}>
             {errMsg}
           </p>
-          <h1 style={{ color: "#fe9126" }}>Sign Up</h1>
+          <h1 style={{ color: "#efbe8a" }}>Sign Up</h1>
           <form onSubmit={signUp}>
             <label style={{ fontWeight: "bold" }} htmlFor="username">
               First Name
@@ -344,13 +344,12 @@ const Register = () => {
               <FaInfoCircle /> Password does not match
             </p>
             <button
-              className="login-btn"
+              className="login-btn mt-3"
               style={{
-                backgroundColor: "#3399cc",
+                backgroundColor: "#efbe8a",
                 border: "none",
                 height: "40px",
                 color: "white",
-                marginTop:"10px"
               }}
             >
               Register
@@ -360,7 +359,7 @@ const Register = () => {
           <Link
             href="/login"
             style={{
-              color: "#3399cc",
+              color: "#efbe8a",
               textDecoration: "none",
               fontSize: "500",
             }}

@@ -20,7 +20,7 @@ const Login = () => {
       <Container
         fluid
         className="py-4 px-0"
-        style={{ backgroundColor: "#f5f5f5" }}
+        style={{ backgroundColor: "#1f1f1f" }}
       >
         <Container className="">
           <Link
@@ -29,7 +29,7 @@ const Login = () => {
               fontSize: "1rem",
               textDecoration: "none",
               fontWeight: "bold",
-              color: "#3399cc",
+              color: "#efbe8a",
             }}
           >
             <span style={{ fontSize: "1.2rem" }}>
@@ -46,7 +46,7 @@ const Login = () => {
       <Container className="d-flex justify-content-center text-align-center">
         <section className="mt-5">
           <form onSubmit={handleSubmit} className="">
-            <h2 style={{ color: "#fe9126", fontWeight: "500" }}>Sign In</h2>
+            <h2 style={{ color: "#efbe8a", fontWeight: "500" }}>Sign In</h2>
             {error && <div className="errmsg">{error}</div>}
             <label htmlFor="email" style={{ fontWeight: "500" }}>
               Email:
@@ -74,9 +74,9 @@ const Login = () => {
               autoComplete="off"
             />
             <button
-              className="w-100 login-btn"
+              className="w-100 login-btn mt-3"
               style={{
-                backgroundColor: "#3399cc",
+                backgroundColor: "#5a5959",
                 border: "none",
                 height: "40px",
                 color: "white",
@@ -89,7 +89,7 @@ const Login = () => {
               href="#"
               style={{
                 fontWeight: "500",
-                color: "#3399cc",
+                color: "#efbe8a",
                 textDecoration: "none",
                 fontSize: "500",
               }}
@@ -101,7 +101,7 @@ const Login = () => {
             <Link
               href="/register"
               style={{
-                color: "#3399cc",
+                color: "#efbe8a",
                 textDecoration: "none",
                 fontSize: "500",
               }}

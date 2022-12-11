@@ -2,6 +2,8 @@ html,
 body {
   padding: 0;
   margin: 0;
+  background-color: #191919 !important;
+  color: white !important;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -22,12 +24,17 @@ a {
   margin: 0;
   padding: 0;
 }
+.cart {
+  .cart-length {
+    background-color: rgb(211, 67, 67);
+  }
+}
 .cart:hover {
   background-color: white !important;
-  border: 2px solid #fe9126 !important;
+  border: 2px solid #efbe8a !important;
   transition: all ease-in 0.1s;
   .cart-icon {
-    fill: #fe9126 !important;
+    fill: #efbe8a !important;
   }
 }
 .cart-icon {
@@ -35,7 +42,7 @@ a {
 }
 
 nav {
-  background-color: #fe9126;
+  background-color: #efbe8a;
   padding: 2px 12px;
   .navbar-collapse {
     display: none;
@@ -78,18 +85,28 @@ nav {
     }
   }
 }
+.pagination-nav {
+  background-color: #191919 !important;
+  .pagination {
+    background-color: #191919 !important;
+    .page-item {
+      a {
+        background-color: #191919 !important;
+        border-radius: 0;
+        color: #efbe8a;
+        outline: #efbe8a;
+      }
+      a:hover{
+        background-color: #3d3d3d !important;
+      }
+    }
+  }
+}
 .h1 {
   position: relative;
 }
-.h1::after {
-  content: "";
-  position: absolute;
-  top: 130%;
-  left: 43%;
-  width: 150px;
-  height: 2px;
-  background-color: #3399cc;
-}
+
+
 button#fill-tab-example-tab-profile,
 button#fill-tab-example-tab-home {
   margin: 0;
@@ -102,15 +119,15 @@ button#fill-tab-example-tab-home {
 }
 .nav-link {
   font-weight: 700 !important;
-  color: #3399cc !important;
+  color: #bfbfbf !important;
 }
 .nav-link:hover,
 .nav-link.active {
   color: white !important;
-  background-color: #fe9126 !important;
+  background-color: #efbe8a !important;
 }
 .footer-link:hover {
-  color: #fe9126 !important;
+  color: #efbe8a !important;
   transition: 0.5s ease-in;
 }
 .parent {
@@ -121,7 +138,7 @@ button#fill-tab-example-tab-home {
     margin: 50px;
     border: 10px solid #f3f3f3;
     border-radius: 50%;
-    border-top: 10px solid #fe9126;
+    border-top: 10px solid #efbe8a;
     width: 120px;
     height: 120px;
     animation: spin 2s linear infinite;
@@ -138,7 +155,7 @@ button#fill-tab-example-tab-home {
   }
 }
 .sidebar-link:hover {
-  color: #3399cc !important;
+  color: #f5f5f5 !important;
 }
 
 input[type="text"],
@@ -191,6 +208,14 @@ form {
   justify-content: space-evenly;
   flex-grow: 1;
   padding-bottom: 1rem;
+  .search-btn:hover {
+    background-color: #efbe8a !important;
+    color: white !important;
+  }
+  button:hover {
+    background-color: #262626 !important;
+    color: #bfbfbf !important;
+  }
 }
 section {
   width: 100%;
@@ -200,7 +225,7 @@ section {
   flex-direction: column;
   justify-content: flex-start;
   padding: 1rem;
-  background-color: #f3f3f3;
+  background-color: #3d3d3d;
 }
 .instructions > svg {
   margin-right: 0.25rem;
@@ -232,10 +257,32 @@ section {
   padding: 0.5rem;
   margin-bottom: 0.5rem;
 }
+.product-card{
+  overflow: hidden !important;
+  transition: all .2s ease-in;
+  .add-cart-button{
+    transform: translateY(4.5rem) !important;
+    transition: .3s ease-in all !important;
+    opacity: 0 !important;
+  }
+  .add-cart-button:hover {
+    background-color: #bfbfbf !important;
+    color: #262626 !important;
+  }
+}
+.product-card:hover{
+  box-shadow: 0 12px 32px rgba(252, 250, 250, 0.462) !important;
+  padding: 2.5rem 0 2.5rem 0 !important;
+
+  button{
+      transform: translateY(0) !important;
+      opacity: 1 !important;
+  }
+}
 
 @media (max-width: 768px) {
   nav {
-    background-color: #fe9126;
+    background-color: #efbe8a;
 
     .navbar-collapse {
       display: block;
@@ -250,7 +297,7 @@ section {
       justify-content: space-evenly;
       padding: 0;
       gap: 1rem;
-      background-color: #fe9126;
+      background-color: #efbe8a;
       width: inherit;
     }
     .nav-items {
@@ -262,7 +309,7 @@ section {
       padding: 0 24px;
       gap: 1rem;
       width: 100%;
-      background-color: #fe9126;
+      background-color: #efbe8a;
       max-height: auto;
       transition: all 0.4s;
 
@@ -278,7 +325,7 @@ section {
       }
     }
   }
-  .column{
+  .column {
     width: 300px !important;
   }
 }

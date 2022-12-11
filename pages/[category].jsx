@@ -24,7 +24,7 @@ const category = () => {
         <Container
           fluid
           className="py-4 px-0"
-          style={{ backgroundColor: "#f5f5f5" }}
+          style={{ backgroundColor: "#1f1f1f" }}
         >
           <Container className="">
             <Link
@@ -32,7 +32,7 @@ const category = () => {
                 fontSize: "1rem",
                 textDecoration: "none",
                 fontWeight: "bold",
-                color: "#3399cc",
+                color: "#efbe8a",
               }}
               href="#"
             >
@@ -57,7 +57,7 @@ const category = () => {
       <Container
         fluid
         className="py-4 px-0"
-        style={{ backgroundColor: "#f5f5f5" }}
+        style={{ backgroundColor: "#1f1f1f" }}
       >
         <Container className="">
           <Link
@@ -65,7 +65,7 @@ const category = () => {
               fontSize: "1rem",
               textDecoration: "none",
               fontWeight: "bold",
-              color: "#3399cc",
+              color: "#efbe8a",
             }}
             href="#"
           >
@@ -102,17 +102,24 @@ const category = () => {
                         height: "350px",
                         gap: "2rem",
                         borderRadius: "0",
+                        background: "#3d3d3d",
+                        border:"1px solid #bfbfbf"
                       }}
-                      className="d-flex flex-column justify-content-center align-items-center py-3 card"
+                      className="d-flex flex-column justify-content-center align-items-center py-3 card product-card"
                     >
-                      <Link href="/product/{`${items.id}`}">
+                      <Link href={"/product/" + items.id}>
                         {" "}
                         <Card.Img
                           variant="top"
                           src={items.images[0].imageName}
                           height="150px"
                           width="150px"
-                          style={{ objectFit: "cover", width: "150px" }}
+                          style={{
+                            objectFit: "cover",
+                            width: "150px",
+                            background: "#3d3d3d !important",
+                            borderRadius:"0"
+                          }}
                         />
                       </Link>
 
@@ -134,7 +141,7 @@ const category = () => {
                           <Button
                             className="w-100 add-cart-button"
                             style={{
-                              backgroundColor: "#3399cc",
+                              backgroundColor: "#5a5959",
                               border: "none",
                               borderRadius: "0",
                             }}

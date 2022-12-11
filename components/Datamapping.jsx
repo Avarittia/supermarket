@@ -12,19 +12,33 @@ const Datamapping = ({ products, loading }) => {
     <Row>
       {products.map((items) => {
         return (
-          <Col lg={4} md={6} sm={12} className="g-5 px-4 mx-0" key={items.id} >
+          <Col lg={4} md={6} sm={12} className="g-5 px-4 mx-0" key={items.id}>
             <Card
-              style={{ height: "350px", gap: "2rem", borderRadius: "0" }}
-              className="d-flex flex-column justify-content-center align-items-center py-3"
+              style={{
+                height: "350px",
+                gap: "2rem",
+                borderRadius: "0",
+                background: "#3d3d3d",
+                border: "1px solid #bfbfbf"
+              }}
+              className="d-flex flex-column justify-content-center align-items-center py-3 product-card"
             >
-              <Link href={"/product/" + items.id}>
+              <Link
+                href={"/product/" + items.id}
+                style={{ background: " #3d3d3d" }}
+              >
                 {" "}
                 <Card.Img
                   variant="top"
                   src={items.images[0].imageName}
                   height="150px"
                   width="150px"
-                  style={{ objectFit: "cover", width: "150px" }}
+                  style={{
+                    objectFit: "cover",
+                    width: "150px",
+                    background: " #3d3d3d",
+                    borderRadius: "0",
+                  }}
                 />
               </Link>
 
@@ -46,7 +60,7 @@ const Datamapping = ({ products, loading }) => {
                   <Button
                     className="w-100 add-cart-button"
                     style={{
-                      backgroundColor: "#3399cc",
+                      backgroundColor: " #5a5959",
                       border: "none",
                       borderRadius: "0",
                     }}

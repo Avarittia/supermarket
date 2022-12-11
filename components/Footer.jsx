@@ -9,13 +9,13 @@ const Footer = () => {
     <Container
       fluid
       className="py-5 text-light mt-5"
-      style={{ backgroundColor: "#2b2a2a" }}
+      style={{ backgroundColor: "#1f1f1f" }}
     >
       <Container>
         <Row className="py-5">
           <Col xs={12}  sm={12} md={6} lg={3} className="g-2">
             <h3 className="text-start">Contact</h3>
-            <div style={{ color: "#fa9126" }}>
+            <div style={{ color: "#efbe8a" }}>
               <ul
                 className="d-flex flex-column justify-content-center align-items-start ps-0 py-4"
                 style={{ listStyle: "none" }}
@@ -68,7 +68,7 @@ const Footer = () => {
           </Col>
           <Col  xs={12} sm={12} md={6} lg={3} className="g-2">
             <h3 className="text-start">Information</h3>
-            <div style={{ color: "#fa9126" }}>
+            <div style={{ color: "#efbe8a" }}>
               <ul
                 className="d-flex flex-column justify-content-center align-items-start ps-0 py-4"
                 style={{ listStyle: "none" }}
@@ -159,7 +159,7 @@ const Footer = () => {
           </Col>
           <Col  xs={12} sm={12} md={6} lg={3} className="g-2">
             <h3 className="text-start">Category</h3>
-            <div style={{ color: "#fa9126" }}>
+            <div style={{ color: "#efbe8a" }}>
               <ul
                 className="d-flex flex-column justify-content-center align-items-start ps-0 py-4"
                 style={{ listStyle: "none" }}
@@ -249,7 +249,7 @@ const Footer = () => {
           </Col>
           <Col  xs={12} sm={12} md={6} lg={3} className="g-2">
             <h3 className="text-start">Profile</h3>
-            <div style={{ color: "#fa9126" }}>
+            <div style={{ color: "#efbe8a" }}>
               <ul
                 className="d-flex flex-column justify-content-center align-items-start ps-0 py-4"
                 style={{ listStyle: "none" }}

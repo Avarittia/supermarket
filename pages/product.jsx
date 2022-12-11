@@ -10,8 +10,6 @@ import StoreContext from "../context/StoreContext";
 const product = () => {
   const { products, loading } = useContext(StoreContext);
 
-
-
   const [currentPage, setCurrentPage] = useState(1);
   const [productPerPage, setProductPerPage] = useState(9);
 
@@ -32,7 +30,7 @@ const product = () => {
         <Container
           fluid
           className="py-4 px-0"
-          style={{ backgroundColor: "#f5f5f5" }}
+          style={{ backgroundColor: "#1f1f1f" }}
         >
           <Container className="">
             <Link
@@ -40,7 +38,7 @@ const product = () => {
                 fontSize: "1rem",
                 textDecoration: "none",
                 fontWeight: "bold",
-                color: "#3399cc",
+                color: "#efbe8a",
               }}
               href="#"
             >
@@ -66,7 +64,13 @@ const product = () => {
                 className="form-select ms-auto"
                 id="floatingSelect"
                 aria-label="Floating label select example"
-                style={{ width: "300px", borderRadius: "0", marginTop:"1.5rem" }}
+                style={{
+                  width: "300px",
+                  borderRadius: "0",
+                  marginTop: "1.5rem",
+                  background: "#191919",
+                  color: "white",
+                }}
                 onChange={(e) => {
                   const selectedProducts = e.target.value;
                   setProductPerPage(selectedProducts);
