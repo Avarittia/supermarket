@@ -16,7 +16,9 @@ const category = () => {
 
   const filter = products.filter(
     (items) => items.categorySlug.toLowerCase() === category
+  
   );
+
 
   if (loading) {
     return (
