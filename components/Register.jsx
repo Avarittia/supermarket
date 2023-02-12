@@ -173,7 +173,7 @@ const Register = () => {
               ref={userRef}
               autoComplete="off"
               onChange={(e) => setUser(e.target.value)}
-              required
+              
               onFocus={() => setUserFocus(true)}
               onBlur={() => setUserFocus(false)}
             />
@@ -204,7 +204,7 @@ const Register = () => {
               ref={userRef}
               autoComplete="off"
               onChange={(e) => setLastName(e.target.value)}
-              required
+              
               onFocus={() => setLastNameFocus(true)}
               onBlur={() => setLastNameFocus(false)}
             />
@@ -237,7 +237,7 @@ const Register = () => {
               ref={userRef}
               autoComplete="off"
               onChange={(e) => setEmail(e.target.value)}
-              required
+              
               onFocus={() => setEmailFocus(true)}
               onBlur={() => setEmailFocus(false)}
             />
@@ -264,7 +264,7 @@ const Register = () => {
             </label>
             <input
               type="number"
-              required
+              
               id="phonenumber"
               autoComplete="off"
               onChange={(e) => setNumber(e.target.value)}
@@ -295,7 +295,7 @@ const Register = () => {
             </label>
             <input
               type="password"
-              required
+              
               id="password"
               autoComplete="off"
               onChange={(e) => setPwd(e.target.value)}
@@ -326,7 +326,7 @@ const Register = () => {
             </label>
             <input
               type="password"
-              required
+              
               id="confirm-password"
               autoComplete="off"
               onChange={(e) => setMatchPwd(e.target.value)}
